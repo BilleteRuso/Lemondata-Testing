@@ -14,7 +14,7 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html"><img src="http://www.lemondata.com.ar/recursos/img/lemondata-logo.png" alt="" style="width: 200px;"></a>
+      <a href="index.html" class="logo"><img src="assets/img/Lemonweb.png" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -53,14 +53,6 @@
           <li class="dropdown"><a href="#"><span>Soluciones</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">NIO</a></li>
-              <li class="dropdown"><a href="#"><span>ERP</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">RRHH y Liquidación de Haberes</a></li>
-                  <li><a href="#">Gestión de Infracciones Laborales</a></li>
-                  <li><a href="#">Gestión de Trámites y Expedientes</a></li>
-                  <li><a href="#">Sistema de Recibos Digitales</a></li>
-                </ul>
-              </li>
               <li><a href="#">Minos</a></li>
               <li><a href="#">Turnero</a></li>
               <li><a href="#">Obtener</a></li>
@@ -134,7 +126,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <div class="icon"><i class="bx bx-world"></i></div>
               <h4 class="title"><a href="">CONSULTORÍA</a></h4>
               <p class="description">Realizamos consultorías orientada hacia la mejor solución.</p>
             </div>
@@ -150,7 +142,7 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <div class="icon"><i class="bx bx-pen"></i></div>
               <h4 class="title"><a href="">DESARROLLO</a></h4>
               <p class="description">Realizamos software a medida de la organización y su necesidad.</p>
             </div>
@@ -158,7 +150,7 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
               <h4 class="title"><a href="">MANTENIMIENTO</a></h4>
               <p class="description">Brindamos el acompañamiento necesario para la mejora continua.</p>
             </div>
@@ -242,7 +234,7 @@
           </div>
           <div class="col-lg-3 col-md-4 col-6 mt-4">
             <div class="icon-box">
-              <i class="ri-fingerprint-line" style="color: #57AD4E;"></i>
+              <i class="bi bi-pencil" style="color: #57AD4E;"></i>
               <h3><a href="">MongoDB</a></h3>
             </div>
           </div>
@@ -288,93 +280,93 @@
         <div class="row portfolio-container">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <a href="success1.html">
+            <img style="height: 310px; width: 100vw; opacity: 75%;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAABlBMVEX+Kir/KyuqVYmdAAACXUlEQVR4nO2VsWoFMBDD3P//6T5aep1uOgLCyMkgssUelPzk63Nq4euTH2qF/D3Uwu8dboS/NVsh/YE07YaHQJp+vuFQHUTjF0AoXtb42mINpGk3PATS9PMNh+ogGr8AQvGyxtcWayBNu+EhkKafbzhUB9H4BRCKlzW+tlgDadoND4E0/XzDoTqIxi+AULys8bXFGkjTbngIpOnnGw7VQTR+AYTiZY2vLdZAmnbDQyBNP99wqA6i8QsgFC9rfG2xBtK0Gx4Cafr5hkN1EI1fAKF4WeNrizWQpt3wEEjTzzccqoNo/AIIxcsaX1usgTTthodAmn6+4VAdROMXQChe1vjaYg2kaTc8BNL08w2H6iAavwBC8bLG1xZrIE274SGQpp9vOFQH0fgFEIqXNb62WANp2g0PgTT9fMOhOojGL4BQvKzxtcUaSNNueAik6ecbDtVBNH4BhOJlja8t1kCadsNDIE0/33CoDqLxCyAUL2t8bbEG0rQbHgJp+vmGQ3UQjV8AoXhZ42uLNZCm3fAQSNPPNxyqg2j8AgjFyxpfW6yBNO2Gh0Cafr7hUB1E4xdAKF7W+NpiDaRpNzwE0vTzDYfqIBq/AELxssbXFmsgTbvhIZCmn284VAfR+AUQipc1vrZYA2naDQ+BNP18w6E6iMYvgFC8rPG1xRpI0254CKTp5xsO1UE0fgGE4mWNry3WQJp2w0MgTT/fcKgOovELIBQva3xtsQbStBseAmn6+YZDdRCNXwCheFnja4s1kKbd8BBI0883HKqDaPwCCMXLGl9brIE07YaH/P+1FL4BPtdcl9KXfdoAAAAASUVORK5CYII=" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Sistema de RRHH y Liquidación de Haberes</h4>
               <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
+          </a>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <a href="success.html">
+            <img style="height: 310px; width: 100vw; opacity: 75%;" src="http://2.bp.blogspot.com/-QdF9qGOqyT4/UtTmNDLvU4I/AAAAAAAAUpU/GXWhidOyV5s/s640/Captura+de+pantalla+2014-01-14+a+la(s)+08.24.07.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Plataforma para entrevistas con el Ciudadano</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
+          </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <a href="success1.html">
+            <img style="height: 310px; width: 100vw; opacity: 75%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq9YWTwjskX4iChTTTt3mvF9wiMEHD1oo2SQ&usqp=CAU" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Gestión de Infracciones Laborales</h4>
               <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
+          </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <a href="success2.html">
+            <img style="height: 310px; width: 100vw; opacity: 75%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR6u6XTwOwFmVUg_QX9jO4bb_STW0ktsSnM1XJYrhWsbGEMR_k5e-Dm98cZRpekgqZpoM&usqp=CAU" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Sistema de Gestión Integral Tributaria</h4>
               <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
+          </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <a href="success.html">
+            <img style="height: 310px; width: 100vw; opacity: 75%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIhvYw0TIsmUFKxlBHois3rQKA-Dg5dvINcQuoQeizTjZ2pEsv53uMr8MXaEozfsxo7jI&usqp=CAU" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Estabilización y soporte de Base de Datos de Call Center</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
+          </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <a href="success1.html">
+            <img style="height: 310px; width: 100vw; opacity: 75%;" src="https://media.istockphoto.com/photos/yellow-color-toned-square-sheet-of-paper-picture-id501202596?k=20&m=501202596&s=170667a&w=0&h=41JzC6gBnD2pE5s156Kmf-XnAT3lPric7IGxgxtKVTM=" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Sistema Integral de Gestión de Trámites y Expedientes</h4>
               <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
+          </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <a href="success2.html">
+            <img style="height: 310px; width: 100vw; opacity: 75%;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAA1BMVEV4e3P4X4SJAAAASElEQVR4nO3BgQAAAADDoPlTX+AIVQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwDcaiAAFXD1ujAAAAAElFTkSuQmCC" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Gestión de Tarjeta Social</h4>
               <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
+          </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <a href="success2.html">
+            <img style="height: 310px; width: 100vw; opacity: 75%;" src="https://enesarrate.files.wordpress.com/2014/02/cuadradoamarillo.jpg" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Recaudaciones</h4>
               <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
+          </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <a href="success.html">
+            <img style="height: 310px; width: 100vw; opacity: 75%;"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs7mZ7eEowaOiqHVnT_c5KKejRofeE04rEawS3-_lpLCN5Cdmks7H4-08H3Y2xFw4qCfY&usqp=CAU" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Migración y unificación de bases de datos en dos sistemas: SIGEC y PROFEDER.</h4>
               <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
+          </a>
           </div>
 
         </div>
@@ -388,7 +380,7 @@
 
         <div class="section-title">
           <h2>Tareas</h2>
-          <h3>Algunas <span>Tareas Realizadas</span></h3>
+          <h3>Algunas de las <span>Tareas Realizadas</span></h3>
         </div>
 
         <ul class="faq-list">
@@ -398,7 +390,7 @@
             <div id="faq1" class="collapse" data-bs-parent=".faq-list">
               <p>
                 Brindamos soluciones de inteligencia de negocios que
-les permitirán disponer de la información correcta
+permitió disponer de información correcta
 en el tiempo oportuno, optimizando el flujo de
 información para la toma de decisiones.
               </p>
@@ -435,11 +427,10 @@ seguridad y confidencialidad.
             <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Innovación <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
             <div id="faq4" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Contamos con un departamento de Investigación,
+                Gracias a nuestro departamento de Investigación,
                 Desarrollo e innovación ( I+D+i ) con amplia
-                experiencia en el desarrollo de software.
-                Todas las soluciones se realizan con las últimas
-                tecnologías de programación avanzada que permiten
+                experiencia en el desarrollo de software, todas las soluciones se realizarón con las últimas
+                tecnologías de programación avanzada, permitiendo
                 aprovechar al máximo las exigencias
                 del mercado actual.
               </p>
@@ -450,10 +441,9 @@ seguridad y confidencialidad.
             <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Capacitación y Coaching <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
             <div id="faq5" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Proponemos una estrategia que contempla un proceso
+               Con una estrategia que contempla un proceso
 de capacitación de conocimiento continuo desde los
-primeros meses de trabajo conjunto.
-Mediante la nivelación de conocimientos reforzamos
+primeros meses de trabajo conjunto, mediante la nivelación de conocimientos reforzamos
 la independencia operativa, la independencia técnica, la
 escalabilidad y la calidad de trabajo del equipo técnico.
               </p>
@@ -465,8 +455,7 @@ escalabilidad y la calidad de trabajo del equipo técnico.
             <div id="faq6" class="collapse" data-bs-parent=".faq-list">
               <p>
                 Generamos soluciones innovadoras y de calidad
-que conviven con los sistemas vigentes.
-Vemos a las personas que forman parte del
+que conviven con los sistemas vigentes, viendo a las personas que forman parte del
 organismo como una pieza clave de la solución.
               </p>
             </div>
@@ -490,16 +479,15 @@ organismo como una pieza clave de la solución.
         <div class="row">
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <a href="java.html">
             <div class="member">
               <div class="member-img">
                 <img src="https://blog.centrodeelearning.com/wp-content/uploads/2021/05/software-developer-working-with-computer-in-the-mo-XTJBZ62-scaled.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="java.html"><i><h5>Conoce más detalles</h5></i></a>
                 </div>
               </div>
+            </a>
               <div class="member-info">
                 <h4>Desarrollador JAVA</h4>
                 <span>2 o más años de experiencia.</span>
@@ -508,16 +496,15 @@ organismo como una pieza clave de la solución.
           </div>
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <a href="analista.html">
             <div class="member">
               <div class="member-img">
                 <img src="https://cdn.euroinnova.edu.es/img/subidasEditor/curso%20en%20linea%20php-1592203383.webp" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="analista.html"><i><h5>Conoce más detalles</h5></i></a>
                 </div>
               </div>
+            </a>
               <div class="member-info">
                 <h4>Analista Funcional</h4>
                 <span>Junior / Semi Senior</span>
@@ -526,16 +513,15 @@ organismo como una pieza clave de la solución.
           </div>
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <a href="back.html">
             <div class="member">
               <div class="member-img">
                 <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQVFBgUFBQZGBgZGxgbGhgbGBsaHRsbGxsZGhgaGxobIS0kGx0qIRoZJTclKi4xNDQ0GiM6PzozPi0zNDEBCwsLEA8QHRISHzMqISozMzUzMzMzMzMzMzMzMzEzMzMzMzMxMzMzMzMzMzMzMzMzMzMzMzMzMzMxMzMzMzMzM//AABEIALcBEwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAGAgMEBQcAAQj/xABQEAACAQIDAwYJBgsGBQQDAAABAgMAEQQSIQUxQQYiUWFxkQcTMlKBkqGx0RRCYnKCwRUjJDNDU3OisuHwFlRjs8LSFzTD4vGDk5SjJURk/8QAGAEAAwEBAAAAAAAAAAAAAAAAAAECAwT/xAAoEQACAgICAgEDBAMAAAAAAAAAAQIRITEDEhNBUWFxkSKhsfEEFIH/2gAMAwEAAhEDEQA/AL1KdWs0HL6f9VH+98aUPCBP+qj72+NdHkRz+NmmilXrMh4Qpv1Kes1e/wDEOb9SnrNR3iHjZpqmlCs0TwiS8YE9ZqWPCPJ/d09dvhR3iHjkaTXhrN/+JEv93T12+Fef8SZOOHT12+FHeIeNmk0lqzk+EmT+7J67f7a9TwkNcZsOtuNnN7dVxT7xDxyNDamjXRSh0V13MAw7CLivGqiBJrw1V8oNtJhIxIyliWyqo0ud+87hYULN4RB/dz64+FS5JbKUW9B0aQ1BB8IY/u59cfCknwhD+7n1x8KXeI+kg1amX3UGty/H6g+v/KlJy0L6LAfX/lR3iHjkWuJmsak7Lku6dooffGTSDMMPYdbhf4rUldsSw2dsMSF1NnBtrxIvU+SPyV45fB9AYH82OwVnPLP/AJk9gqvwvhljVQpwbm3RIvwoX25y+GIkMggKjdYuD7hUxaTKnFtFq9N0Ntyr/wAL97+VJ/tR/h/vfyq+6IUGalsb82KtYzWX4TwheLUL8nvbjnt91SV8Jlv/ANb9/wD7altM0SZpdLFZoPCh/wDy/v8A/bRpya24uMhEqqU1KspN7EdfEUrKLoUq1IU0u9AHV7Xle0AeilAUkU4lFAItXtOZa6gD56kwkdrqGP0Q6ud43lRpoejhS0jw/GOTQgMA4NtbH5lWWJ2k0eW0UCE66JG3RfRRprbQ9fTTbbbIFlhiPS3ik59muGtk6tbk1n2T0bKPyl+SHHhI5GYRxuABcZnBvzgB80W0PspJwEYbKxAN7EZ1Ntddb1JmxLyOpORAf1eRCCBbUJbiKch2lJGcrRRsACLtGjlrk3Ocg5jpvv00SvfoSjeqK84RM2XKSDuIN+zdUmXYrXAjikbdclSN500F6mptiVi5SJGO9VXDRmxOgJIXWw6uFOwLjc6yIHvYEGxVdDaxjPNve+hqXJ4yNwS3/JBbYShQxWRem6EbrXte19TupCbCLapHIy7s2U7+NrXGnbVxjzjDlkdXbMpJCpfebHmDdrbhVUm0JFcRlpFJBBWxBzG40W991Ecu7dfYOqS9X9yPJsdlNjGwve1yR2cONM7S2TJEt3jdRcDMQcuouBe1r1YSLiI+cEnKDeXRhrxFze3fVNip5GUklylxoWYqDw38aqKezNmwcnpM2EgbpjT2C1Tmqk5FyZsFD1Bl7mYVdNXUtHI9gV4S/wAzH+0/0tQJHhlKhiG3cMv3m9HvhKH5On7QfwtQTgcXZbZEFh5RRix6yQd9Y8jyb8ekM+Jjtvf0gUtMLGeL/uj31ZRY8tvjTW29SbW6ADpSjiBnAKx5TplyMQb7+OmtYqXybOLXoqvkqncT6bfdU1EEaaC7e7upydyQqRxorOVUFbXudBu3b60DYnJSKOMeMGdzqSdQD1CplNei4QszmDaksepJ7LaenTWiDZmKEwvHcOurID5Q4lL8R0a0ersOBhl8WuvUKGds8mWwzrPAPJIJA/rdUqaNOjRT4nk6uJUtGAs1iVtZVkt80g6LJ19O/eDQsMDvDBlI0KlTcEXBB00NxWvLhkcJiY/IkALAfMk1Gaw3AkFSBxBPRUPwgbDkeFMXAtmPNnVdCTuVyRvItlPTvq7fozlFGVpgid4YeivXwQG8+yruF8VbIQ3E3Ny1wN2b07qr5pJB5Qftyncdd9PteiVBfT8kQYE9Dd1I+SHdY39FTY8VJICM76eaGawG7dTbyyJ5YfqzAqeo3NPPolkSbClQSVYW4207603wXP8Akj/tG/hWs0lnkKkF3KngWYijHkNt+LDwMkhsTIWHZZRVrBDC7lDyoXDEKFLMegU5snlZFKOccjdBqoxPKDBS+XYnppWy9iYWUmVdRwqgCqfa8aZdbhja4qyRwQCKpVwUZTJbTgeivNm4lo2MUnDyT1UAXgp2OmEanUNADtdXldQBj8OCxDC5wmFzCwIaN2O8ZdQ5H/jsqTJBKgyjCxqWGUEkFVANjzb31LW0I9lQ1n2m1vFjEZSVbOU110WxUWsRuqVHhdp3VZPHkE25xI+kQLDTye8CsatVf7FuDftfYrccskJUSQ4cMQQLQq53+VzWOvQTrvqxkGIEWYxREWZgQkZIFyQQtyxuSTk4a9FS4tnYsyM0mMbTKbBpACoZgQbqb2OtumoO08LNDmZ8e5VTomeRjqL3FhbeejjVaV1Ykk2lZUfjpJOYyI4y2OZcOLAE2ZCRvPTv9NS48Pig2bx8YYkqV+VLwG/IDYDoNObKiilfO82d76lkZ9OblJLrr0Wqe7FD41VDn52WFWJKm3N5pIF99uFZOVejWTp0R2wrGPKmIzMWIAWYM7WYXXR8wJJvbjVTFiMZEzqwMZIOYyRqTZfpOtx7KJMNMfF3yOjXbVcGlxmKsvQd19a9cSMWUtMQ2U5zgo/NJIuTpcaAcaqMk2QotW/5A7aGJDWJkvrqFcm4NzqL2HHvqvxRQgZQV6RwPXvPXRBiIsEGN5JldbkkxxqWJItZc5G7XcNKr8ThI31hMj335lUG+8my3GWtUgbxoOPB9JfBKPNdx7b/AH0S3oS5BI0cLo4sRITbtVaKQ1dC0cctsE/CSfyZP2g9zUDbMmjAN7g21uQQwvuAtv76OfCR/wAqv7Rfc1B+yMA8iBgsRGtrvGrA33nMbkdorn5o3g24tHc0i8ZN92U779VS4nn0QQre9wzKPaTw3UtMEx1LILFhZZI76dQN+FRvGzZyjGQgnQgtcC+lrcN3VWLhSWjq7KSd7XyWOzomGNgWYIpXM5ygAeSxBJGhtbfWlQYqNvIkVvqsD7qy/CYOV8QNQzhWK3fPYZLgFje+pNXEeAlVHkzZXUc0ZRd3ymwzDQDPlW285uFqiSv2acbpaDuXaMUQvI4HVqSewDU1O2fjIsQpWzi+gzoyg+kj30Evs3EFmSWQFwFZcoygobXtrcm9wbkjUaVMwmxTqQ7xKCWLBzmVQpDAuMpI+cNBbdfjSUTRsc2ZP8lxEuFkPMJLqPoNpILdQCv9ijxsD4zDSRE6srLmHTbmsPYaCOWWzmiw+HmzlnjCBmZVLtzMpLOFzMSd9zrRXyE2gJsKhJuU5h7B5N+k5bD0VcWjCaezHJcJIsmSSZQwzaeO00uDvIudLeiq/HYWYDOmd03ZgSyjQabyKN+UUci4qVTE5CswUiJGBzLmuGPWfdVFK0hDZfHb15viYwN4HTv0pqWa9mXXNlCuMkyqGZVFrABVQ+kjU+moM8wLHMzMOjMSO+9EG0US2eUygXPNEUa24G9iLbuHTVS4ww3PJZt4CpoOA1O/dWn/AEL+iKydhrlJt0U/hVBTXpNM4hFF8pJHA/GnsEeZ6TTZnJnroOijvkVLlit10ESUU8mJLR04CQeQz17tBA0ZN7FRcGqvDTV23cXlhsN76d9UMsuTWLeSO79NgekUQI1UmxoskSL1CreFqAJV66m81dSAxHEyYa6AzSPe5LrGgbiAuUPl6O2/GmGGElLs8k5YKSGKRheJAYhtLnTQbzSJNnQpqJTK1icmRo7EfSJv/wCKfTExyFhJIYreSsaRyKTxOcld5t01jaWUdFOh3EuHh8UpGuW4bxmgGu7cNw6eNU2GwzXsnO13K2XXrzW4Crid8IIwBJKxOZSgRAAFIKknP93CpscbAIseEQ2tdpA+Vri9ua99CT3ChRlVCi+u8FPhcVIrEIzI97CzaaEE3toRp01fYXbGLitdkvkuF5i21Ug3LG5Ntem9S02ZK4VzDEgBJAXOLXOhGZj0jr0FEGzNlooBMaOAOapjDG+6xZuFXHhlhpULknF+7+wKQ7Ux8m+xtYc1E3WbdprVpFBjZAM7WFri0aacNTajLARuq5fFqvRaJTu6dOwVIDyXsBc33CNf63VsuFXbM3NtUkkD2A2c5Yu0i3IAPMUGw3blqxeN1Wygr06LboqzPjwOj7PdwpDPMFLZtN1u3hW6ik7SRDlYLYGI+MZRpmsfuq8g2WzaBqqkW0g9P31e4ByMxv8ANNRySaZLgmwM8KOA8Xg1JYH8Yot6DWe7LxiIBaAu1jmYOdRc20ykKN3dU3b2Kkk+UGR2YCQWBNwOcRoOGlRNmeLyC8SuQGv+OdGNzpzVH/muWbT2aRSQq4vnWPION2zb+0C1SosfEBaSMv152U9Q03CnY8QgAHyUoSNGzu3SL2auikiswOGAGhzM8lhl37j299ZumzdvFMsuT0iHExsgZEdGUDOSQQOm9zrff00YiNc4N2fIQbFtL8NNxI391B0LqEiljUIFJ0BLW5wHztTeit4hMgeMlcwvYG2thcMBxFZzuzfirRdThZwAqarazhmDa+UoAAI4DfrS9kRIJArKSy688l7dYzE2qo2Xsrn3fMbbgGb40T4HZixG6ALe5PaTc1DNZJLCZC8IuIRMEzvuDLoLX38L0PeCLaoLyRblNsoPQRmX0+X3il+FfFF8MqL5Ia7HpNiAPafZQh4OMTknXXyhl9Itl9oq46s55b6hX4UPlEeKUxyEJKl7WGjJYE3t1DvFAo2jiRfnm4twGvZpWv8AhAWR8PFLExBzEEAgXuhZbk6CxS32qyyZ51Nw8hsTY5hoem4FtauW0zGN5WCsfaU2q5iM2+4B9wp0zTEAZ8/Cw0sPSKmlMX5RkI0uOeu4nTcemoc02J3NMd+/Nx3776U3oLSdWvwV2NlnKsGZ8hGoNtQOm1RMMxC+mrLH4icK0bSMygcGuLHXgbEVWwteMrbe2/0CrjTWDJocZ70UbCFoxVBhZEUZWW/XV1gtoKthbSrQqCvBmo2Nk8biEj4Lqaiw8oIV8q9OYbG4bxvjc5zHTjVAGcRtUyF6q4cQpAIa9L2ftFXZl1BHUaALvNXU3XUAY082EvmzYi586S++xI0j4AkbzXkOIwbko2GdLBit5kGpAsDZFvqPaanYraLRqfGYWNSLiPmzW1DDi4sNCRbjevNl7biZy8+Fia9rlVVcxF/nMGI0I4G+XhpWd4NY5VottjJg5Lt8mW972ZyONzut023cKKWRXjAWBbX0tmJ43trbSh7k9PAZ2ZYwqXuvPUjTjl0tpw6qL5McuXKSDe55qJpqeg7/AI12caVJpHPySp6I0KGMWWMNrbM27Tota2tTRjnBsqoo6ADv7SagM6p5DA3uDv4bjXucX50hbsJ+8Vq42SpL2TJcYzmzOBpfRgLa8bHdpvr2XESNot2AGhCga7+FAvK3HwRzMDO6F41UgRlzl1F8wtrv7qFHxeDy/wDMTsQCNEYXPTcydHdXJLllGTVYRSz/AEbXhMJJI4Vmykg36rdXT8as12Ui75hfje1zr21mngpx+HbGhIvG5zG984AWwI3HOTfyeHCg7lXh1+X4oZR/zE3AcXY0eSUtYKWDbW2Dh82Y4oXuT5SfGpEWDwqX/Kk1FtXQffXz20Sj5oHoUV6qDo9q0mm8tjNYxXIPZbh1bHkZ2zG0sIsb30uK7Ccj9mQqEXadgCSLy4Um56zHfj01kzoOj3GvMoqeoGxrsXZKix2kthf9NhuO/clSIeTOCnWQ4XGF2VRmKyRSKDqVzBV0BsdxB31ilq1DwKnXGL9GA/5wpOCWQtlFEuIaBmPNlW9jYC45p46br03sXaOKT86jMutmsuljuIHC+mnV11VbGnBwmLQA5VVLDo0ccOtRVPhtsyRoUV2AN7i+/trPrbZqpYT9mq7K2qzZmCjmnTnXBHBr2HWLdVWj46SSwJsOgaD+dZzyFx80kzIFd0CkuxNwnmknrIItvNz0GtBjcVzyj1dHXCXZDXKbZgmwzKN+8eisjwLvh5SDzdbg9BBraySwtVDtnknHOVCnK7khNLhiASe4DU7tKUW7oUknkIMGy4/ZzxjVmQ5QbaSLqF13c4dxrH5opQuRHCAE5kaVRqNCCpIsb3rROSezp8BL4uRgVYblbMNLAHpVhu10Ioc8JOETC4rP4jPHPeRWzWAc/nEtlNtSD2OK3irwcs24u4gr8hk1DOlugOjcddx031zYFg+XMjcbGRbHqtffUZNpRruhHUc5Fv3dajRY4BrsgcH5t8v7wF61rBKk7tk3ExnxZvJHcC4Cst+PNNjRv4JMdhI4JhiEBYyAglb83Iv33rNcTOjWyRhLdDFr9etEnI383J9Ye6lVEm0JtbZnmR+p/KnDtbZoFyIx9gfCs1ANJxCnLRYGnJtLZrahYz9gfCnBj8B5qep/Ks4wosoq62JGHkAbUU7ALjtPBjco9WvIsfhnbKqWJ42tUuLDxj9GPZS5ZY4xmMe7oFAFNI+p7TXlS/w5hP6U11UI+ajMPOHfT0eClfVI3b6qM3uFfVscKL5KqOxQPdTtLsKj545M7NxQcH5NP/7Mlu/LR7Ds3En9A47VI99aVXlbx/yXFUkRLiUjPl2JizoIyOslRb20/wD2dxX0e9fuo6rqf+3P4Q1xRSoxnlf4PcdiHR4xHopVszgcbjcNaoE8FOPJ1eBftsfclfQGJ8mqotrWLfZ9mUl1VIBfB94Pp8Fi1xEs0bjI6ZUzX5w0NyB0UB8sxbaGKH+M57zevoLDNqO37jXzty+JXaeL/a371U0tMFkjArxuaS5XgKg5CRpp6TSXjI+d7apMPZLFdUFZCONS0e4obGhytM8CZ/GYsfQg/il+NZlWleBU/jsSOmOP2M/xpPQD2C8GTRLKnyoMMRzLiMjJ5bK3l861z0VGHgXHHGn0Qj/fWoGePT8Ymh84cL9dOfKUIOV1bpsQbdtt1RQwG2XyaXAQ+IjcuXYu75cpY7kFhewsLWvwPSamYfAlgX0VBcs58kBfK142sd3RRRKwVCzAmw8kbyT80dJNwB1mosGDFki0yx2ZwPJz+UkYHBVJDW0sFjG41nLjt2zWPI4qkI2dgxGheULxN20CIN2a+gOhJ6L24XMoOHBdwQgGikWJXfdxvAPmdFri+i+y2e5IzKh0XznXX05eA84HiopSyCSEMR5cYa31lv8AfVKKWibt5JOIhRlOcLlAvZgMotfXXdpxqh5TclIcdCsErOqq4ZGQjMpsQQCwIKkH3UQ4nWNvqt7jXk45ubiAPZqKCb9GcL4G8F+vxB9Mf+ynB4G8D+txHrp/sozbb+FBsZ0B6C2vRu7RXfh/CgX8ctunW3faqEBw8Duz/PxHrr/tqv2xyRw+zwggLkSFi2dg2q2AtYDprT3xiBPGFuba+bqrOOW/KbDySJHGxYJmzMNBdrc0E8RbXtoAqMPhnc2VSf66acx+y5kW5jbKN7AXA7bbvTVvyc2jFIyoNOgUatiY4yUUFnA1HAdpp0BmaLYVc8nh+NHZUXaiATPYAC97DcL6kDqqfyeT8aOykAZAU3iZsiliCR1U4L01ipyilspPUKAKz8MQeYfVrq8/DcX6tvVrqAJsXKiNpfFiKXcTmIQLpbTy739FTDtYcEPeBQ4u0oYnVsobQrv6bEe6p34duObFp008PROVsmybdI3R97fyqh5UcspsNh3mSJCVygZsxHOYLrYjpqU+07m5jp9MYjqVeMWO8Gx7NDTaQzLm8Lm0m8lMMPqxuffIacg5ebYlbKjAE8VgX/UDWlhQvkRp6AB91JOKkG6MeyoKpAvs3H7UYXmmd/o+LQD91BU5JMWzC6MRfeUNXK4qc7kpwjGHdGPTer7/AEJ6fUp8Liym0oo2kN3awS1v0TEn2VlnhIFtq4ofTQ98aGtFXY042rFjp3VVTQrYiwyMl9e2rjbvJDZU0r4nEAl5CMzCVwCQoUWCm25RU3YVRgTa9XfSMn9WNbivJTYC/MB7Zpju+3S12JsAfoIz2l297VQqMM8X/VjT8JAGprcVwewl0GGg321iv76eU7EXdhMP/wDHj+8UdmFGGiRPO93xrR/AvIPlM4BB/FKd/Q4+NF42xslPJgiHZCg+6p2A5TYIk+KUKepFGnaOFJuxi35LYYszFmuSSRccTc8Kl4XBRwrkjWwJzN0ngAT0k2HYDSMFtGKUNIjZlU626TuFuJ3WHWKkyOEBZt41PbuVfRcacSRxNLPsoTiiboN9je3Bm1yg9Q5znoyDppcz5FCrbOxst+LG5LEegseoGvYIjfO3lHS3mg207TYX7ANbA1XbNxHjWfED82Rkh+kgN3kGm52AtvBVEb51AiwispyDcgHaWY3N+k7j6aRh0PiFW/6MC/2bUxstrs731ds4HDKAEUjtCg/ap3ZAtEF4I0kY+rHI6INfoqKRUsMl4twInN7cxv4TTG1WICqNFs1+uwso7zf7IpciZorE8FJt9EhiPTa3pql5Q7QyDNfRI3Y92n8NAnsf2bhYcThhnjRgSwJIF8ysVzXGoOl71Gfkeim8Urx9QNx3GmfBnPnwZ18mWQH02b/VRhahMb2C/KWU4bZ8ryMrZF0IGXMSQqC3SSQK+f8Ax7E3JuSST2nWtP8ADRtnWLBIf8WT2rGP4zbqWsrbSmSGXg8gaTFrbyU559B5o7/dWtzsqAk6AXZj08STQR4IdnkRyzkeUwVT02Fz3X9taEmGSTMHAK2sQdxq1hAZ88hd2c/OJPfwq25Pj8Z6KIpeTuGO5Sv1WPuNJw2wVjfMjseoj7xUATQD003ipyilspbqFPZGHCkSy5Rdge69AFT+HU4xP6tdU/8ACEPniuoArMNsvCTfPRuoix7jvqYnJKJdUeROpW09Vrio7YeNvKRT9n77VJw8mQZVLAdGY/eaQ6JcewYwOczMekkD3Cnl2RCvze9jUXxrdfePjSS5PD20WPqTWTDoQCUBO4Fhc9gJ1p8CMbgvoFCe3OTkGLAE6Bst8pLG6332I3VTLyFePXDY6eHqDsy+rmAosOoZbY2bBOuVndCNQ0bFSD2EEH0iq7BR43DuFSdcTFbdMpSReyRLgjtWnNlYWWOJY5sR45xe8hQISL3AIB4br1L/APU91Kw6i8cHmQo6KoNtQxYjsJUWoPn5N4qInxEuZTvjkGZfQRYii4Mg/Se0fCvGkj4ue+lY+oB/gYlvx2CkU+dGxdD2BWBHdUpdgR8MLKe1GH8TijDx0fnE99ccRH0E/wBdtPuHQETsBdwwbjr/ABP+qWkJyef9UQOsQfc5ozXFR8FNe/K18z3Ud2LqgVXk6R80D7SD+FGqwwWEmQWWOI9BLtf2QirxcYOCinVxR4AUdmOkQYs6pGsgUM8wuEJIsis41IB/R33VMlsSinW8hY/YzuncyJ3Uibnywg7wXk7kMf8A1BTOFmziJ+mzetG1/aaokm47nAR38u4bpyAXfvHNvwz3pGKcZcq6E2VbaW6SOiygn0UxiJLzIPoSfxRfGnGAzE+bzfSbFu4ZR6TSKj8jmHRQwAFuaQB0AFRb3V7s3QSL5skn77GT/XUbDzqZwo1Ko9+rMUIv180esKe2c5MmIBG6VbdYMMJB77j0GmSPbPQLGV3AGQegOwHsrOuXu0jlaNfnKobqCsre0ugt0Bq0rBroQfPfuLt8axLlRI2kZOZwGLt2M+QejOR9kUhvLYWeB+a8MiE8UcdeZbN/CvfWhEKBcnQam/AcazTwZjxao3B8wHYVA9hgbvPTV/4S9rmDASBTZ5rQr9u+cj7Af02pIpmM8odq/KsVLiPmu5KdSDmxix3HKFv13qDBE0siRoLszBVHSWIAHeaavRp4KNmeNxokIusKmQ/WPNT2kn7NUjM2LY2zFw2Hjw6bkUAnpbe7ek3NWUa2FrV4RXuanIELvXFq8BrxjUlM4vTbyUl5AOIqLJiV84UxCmnP9CuqA2KXr9U/CvKQUVOF2k9tbN2j4U620JOhRVXhW30+XrPJrgljHSed7K9OLfzzUNR20vLVUKyQcQfObvr3x3We+owFKVP6tSpCyOeN/q9e+MpvL216Co4jvopDyPK9Lz9VIRLi4BPYCadEbeY3qt8KMAzwuaUr0sQOd0Z9g95p1MDJ5lu1h91MVjKtTgPXTq4GT6PrH/bSjgm4sPafhRkVoaWpK0hMEfP/AHf51ITC2+cT3UwtHn6UHzIm/wDsZbf5RqDsV+ZYixQulvqtZe9cp7GrsRi7NmP6UPk+pGUCesXdx1MKbwLWY9DDN2kEKfZlqiSdGM0/1I/8xxbu8Ue+lq4006/SxzMe8mvcA4zSMeDKPQI0IHex76hYOS6ITvIQn1RQUlgTsLD2laRvLlbEvob8xHhiTfusiJcdLN2mX8tSOebMeaUhYEAtdryKyi3EBU9YVUYqBZEQsLlXe2unlMCLbiNB6QK8y8Kx5OTq6NOPi7K2T4+VmHjH4wOguSWKggZmJN7EkDXorJOUEEkckjTKUcp4wqSDlLqXK3BINmLC/VRnt5QqMx4AmgfbuMaUSMzZ+aUU2HkKMibuJABPWTThNyWR8kFF4DLkNOFih01Vj3GSRfe/tqg8LW1fGYmOBScsKZm+vJY2I6kVPWNXuxJEw2zBjGHkI91OhYmQvEB2syj0nqrKsXinld5ZGJdyWYniT0dAGgA4AAVaMZMaatx8FWyvFYISEc+dvGH6g5qDsIu326xCFQzBS2UEgZt+W5tmt1b/AEUf7Z5YySouFwitHAqqgA/OOoAUKbeSp05o1PE8KuJJpg2z413ENiq3RX3hnHlW6V+bfpBqA+08T0qPsj76udkbCWGCOLiiKCR529j6xJqS2zlOvHj21LyNMEcTjsU2+Rh2AD3CgHbe2cWuLeM4iQKFTmhyBqB0VtX4JWsX5cYbJtWVB5kdvSq0JA5YJeytsYpc5kJbnG19dL6VaJyzdDzkvRyvJaPLbTdVRjOTUTXCKzn6C3HrGy+2kBUL4QE8w11KbkUf7vJ3x/766jIYLZNjm/NYC/SL+4iqHlnjZMCqFQr5yw1utsoB4E330cwJzhQN4ZU/FQH/ABH/AIR8KHFB2Y7yKxjY2F5XAQrIUsu6wRGvrfXneyiVMAvX30KeCBfyWb9uf8uKj9U1o6oOzIK7OXr7z8aWNmr5o99TwtKAp0hWyCmCUfNXuFS0jtwpwU4ooAetzKjypU0Dm0y60ARUSn0SvVFOCgBgjWvcl6dsKVloAj+LqJtHFrGtged7us15tPaioCqWLcTwX4mhHGbRGtz2nprOfJWEbcfHeWR9oY5vFxvxhtmQcUClHAFrnmnMBxKqNL0QYFhm6bRoR9tnPtCpQZFtiMTosh5jMFJ6Lmy36r2v20Z4dFWSQDQL4uMDoCRqR7HFXF2rInGnQvD4k/jDwMhA+yiKf3lbupGAfmJ9Vf4RUPZK3hRvPzyW/au0n+upcIKqo6AB3C1TLkSLhxtoj4eXMgv58p9HjHt7LVIQUhIAoAAsB/XGn41rmnLtKzq449Y0C/LZ8sDDiwIHpoCxH5m44hT6Lg0Y8vprvHGOtj91BeJb8Sw6Aw7r29lq34lSObmdyLDlXtBlwmDwV7gRpiHN94kUPGh+qzS6EbslCRpbzNITI5uzW16lAVR2AACm210rUwHMOut/T8Pvo18HezvHY6IEXVCZG7E1X9/IPTQhCK1zwRYRY4p8U5CglY1Y6WCjO+p6Sy+rVegNPrwb6jNiCQCAFU2szm177rLv77U0FYyEGU6L5KgLqTvvqd3XSAn1hnL1v/zEmm5YB+6h0o9xm32hnnBilxCR5NUY5gCOcApsHsd9qy7lBtFJ9oSzRI6K3i7K65XuqoCSvA3FNCZucOIMpLFcsS5hziQzMpIYsvBRbidasltYW3cLVnmL2652K2Xxj4mRGjKiNs4dyc5II0ABOu7dRvslwYIiN2RNCLEWUCxB3GkMm11dXUAUEN7ignwxg+Iiv+sP8B+FG0B1F6DPDGPyaL9r/wBN/hQAx4ID+TT/ALb/AKafCtAtxrPPA8fyef8AaL/lrWhKKQDqilhaQhpxTQAoLSlrlpwCgB0eTTZp4DSm3FACRS1WmmmRfKZR2kCok22ol3XY9QsO80nJLZSi3pEySRUBZjYDeaHdrbe3hTkXp4n4CqnlHyhCi7kDzVHDr/nQ/saCTGN4yS4hBNumQjgPo9J9HZlKd60dEONLeya+KklNoo2YdIGnrHQUh+TWIk8qRI+9z3Cw9tF2HVVFgAFAsANAB1UibFRj5wHprKzUo9hcmIsM/jWPjZR5LuuidaJcgN1m/VarVYlUsQNWN2PSbBb9yqPQKgYzb2Hj8uVB2sKosZy7wq+S5f6qlvaBT/U8E/oWQtLU2ZLVns/hAHzI3PoA95qun5cSHdER2mjxsfliaoJx00iTFga5h2Vj0nK3Ek6WFK/tOSOcj31vZyQfdVriZL54l7ticy4p2OoAUL2XYH2j20MbbksCg+c3ssPhXmJ5QA2KoykBhw3G2neBVU02ds56K3SpUcspW7HK9jHH+tf5e+k3p1Bu7+/d7LUySREtaDgOUkOHwaQr40uFNwUQoGZizEX1vra/QBQAjZQW6Bep0fKBT+cj9Kn7jVYEHKcrlygGR+5q5uVq7/GP3GhaDauGbjl+sLVYRLG/kFW7CKKGWp5Vr57+qaD58T4zFvJrqynXfpb4VeNB9Gh8D8of6y+8UUJhd/aUcFkPo/nRZyY5VRpG3jQ684WJW/DqNZ2+MjX54p0beiVcoufRTpDNhHKvBn9MPVb4V1Yx/aFPM91dR1QjWQ+tBvhVYnCx3/Wj/Lkrq6sxjXgeb8TP+0T+D+VaQtdXUAKAp5Frq6gBxVp1a6uoAcO6hTbPKhY1JW6ruzWuTw0HD011dWcma8UU7A/Acp453ZEBzDeSOHE9dK2zt4RKTa5rq6s2dPpgxyfwr7QmaaUnxSHUXsWO8LpqFtqfQBxtqGEhCgKoAA0AAsABuAA4V7XUcmGLjysgv4ReUZw6pDGSHk1LD5qC17HpJsOy9ZZNjZZdM7HtY+8m9dXVrxRWDDmk7YwIOwdgue806sIPzjfor2urtjxxONyYho+3vpJXrPfXV1N8cRqTEkm1714HtwFdXVi4oqx6PFruK699RxBrXV1ZvZa0L8URv9B91SVGprq6mgFYhrJ2n+dQa6upMDy9ehyNxI7K6upAW+Hx8hQAyMQPpGuwb89j2e+urqsTIb4scAaZfGHgK9rqmxjfytururq6uosD/9k=" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="back.html"><i><h5>Conoce más detalles</h5></i></a>
                 </div>
               </div>
+            </a>
               <div class="member-info">
                 <h4>Desarrollador Back End</h4>
                 <span>2 años de experiencia orientado a microservicios.</span>
@@ -544,16 +530,15 @@ organismo como una pieza clave de la solución.
           </div>
 
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <a href="cobol.html">
             <div class="member">
               <div class="member-img">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdjAgsQGl5ASCSfLYKVEcpyPJYD0j9KiahTw&usqp=CAU" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="cobol.html"><i><h5>Conoce más detalles</h5></i></a>
                 </div>
               </div>
+            </a>
               <div class="member-info">
                 <h4>Desarrollador COBOL</h4>
                 <span>Senior</span>
@@ -625,9 +610,9 @@ organismo como una pieza clave de la solución.
                 <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
+                <div class="loading">Cargando</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Tu mensaje ah sido enviado. Muchas gracias!</div>
               </div>
               <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
             </form>
@@ -659,18 +644,18 @@ organismo como una pieza clave de la solución.
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Información Util</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Política de Calidad</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Política de privacidad</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Misión</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Objetivo</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="calidad.html">Política de Calidad</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="calidad.html">Política de privacidad</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="calidad.html">Misión</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="calidad.html">Objetivo</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4>Nuestros Servicios</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Diseño Web</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Desarrollo Web</a></li>
